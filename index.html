@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Libanês Sabores da Terra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/imgs/itutlo.jpg">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div id="logo">
+                <img src="/imgs/ChatGPT Image 23 de mai. de 2025, 10_33_36.png" alt="Logo Sabores do Líbano">
+                <h1>Sabores da Terra</h1>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#reservas" id="reserva-btn">Reservas</a></li>
+            </ul>
+            <div id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-slideshow">
+                <div class="slide active" style="background-image: url('/imgs/itutlo.jpg');">
+                    <div class="slide-content">
+                        <h2>Bem-vindo ao Líbano</h2>
+                        <p>Experimente a autêntica culinária libanesa</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('/imgs/dudu.jpg');">
+                    <div class="slide-content">
+                        <h2>Sabores do Oriente Médio</h2>
+                        <p>Ingredientes frescos e temperos exclusivos</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('/imgs/dede.jpg');">
+                    <div class="slide-content">
+                        <h2>Ambiente Aconchegante</h2>
+                        <p>Uma experiência gastronômica única</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#reservas" class="cta-button">Faça sua reserva</a>
+                <a href="#menu" class="cta-button secondary">Ver menu</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>O Restaurante Sabores da Terra traz para o Brasil os sabores exóticos do Líbano, combinando técnicas culinárias tradicionais com ingredientes frescos e autênticos importados diretamente do Oriente Médio.</p>
+                    <p>Nossos chefs, formados nas melhores escolas de culinária libanesa, trabalham para recriar fielmente os pratos tradicionais do Líbano, adaptando-os ao paladar brasileiro sem perder sua essência cultural.</p>
+                    <p>O ambiente do restaurante foi cuidadosamente projetado para imergir nossos visitantes na atmosfera acolhedora do Líbano, com decoração típica, música tradicional e uma experiência sensorial completa.</p>
+                </div>
+                <div class="about-gallery">
+                    <div class="gallery-item" style="background-image: url('/imgs/banquete.jpg');"></div>
+                    <div class="gallery-item" style="background-image: url('/imgs/restataurante.jpg');"></div>
+                    <div class="gallery-item" style="background-image: url('/imgs/restaurant.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2 class="section-title">Menu Libanês</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="pratos">Pratos Principais</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="sobremesas">Sobremesas</button>
+            </div>
+            <div class="menu-items">
+                <!-- Entradas -->
+                <div class="menu-category active" id="entradas">
+                    <div class="menu-item">
+                        <img src="/imgs/homus.jpg" alt="Homus">
+                        <div class="item-info">
+                            <h3>Homus</h3>
+                            <p>Pasta de grão-de-bico com tahine, limão e azeite de oliva.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="price">R$ 35,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/imgs/tabbolceh.jpg" alt="Tabbouleh">
+                        <div class="item-info">
+                            <h3>Tabbouleh</h3>
+                            <p>Salada de trigo bulgur, salsa, hortelã, tomate e limão.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="price">R$ 42,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pratos Principais -->
+                <div class="menu-category" id="pratos">
+                    <div class="menu-item">
+                        <img src="/imgs/kafta.jpg" alt="Kafta">
+                        <div class="item-info">
+                            <h3>Kafta</h3>
+                            <p>Carne moída temperada com especiarias, grelhada no espeto.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="price">R$ 89,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/imgs/shawarma.jpg" alt="Shawarma">
+                        <div class="item-info">
+                            <h3>Shawarma</h3>
+                            <p>Fatias de carne marinada, grelhadas e servidas com pão árabe.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="price">R$ 78,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bebidas -->
+                <div class="menu-category" id="bebidas">
+                    <div class="menu-item">
+                        <img src="/imgs/araki.jpg" alt="Arak">
+                        <div class="item-info">
+                            <h3>Arak</h3>
+                            <p>Bebida alcoólica tradicional feita de uva e anis.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="price">R$ 45,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/imgs/hortela.jpg" alt="Chá de Hortelã">
+                        <div class="item-info">
+                            <h3>Chá de Hortelã</h3>
+                            <p>Chá preto com folhas frescas de hortelã, tradicional libanês.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="price">R$ 6,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category" id="sobremesas">
+                    <div class="menu-item">
+                        <img src="/imgs/baklava.jpg" alt="Baklava">
+                        <div class="item-info">
+                            <h3>Baklava</h3>
+                            <p>Doce folhado com nozes e xarope de mel.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="price">R$ 32,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/imgs/mamou.jpg" alt="Maamoul">
+                        <div class="item-info">
+                            <h3>Maamoul</h3>
+                            <p>Biscoitos recheados com tâmaras ou nozes.</p>
+                            <div class="item-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="price">R$ 28,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loja" class="shop-section">
+            <h2 class="section-title">Loja Libanesa</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <h3>Kit de Culinária Libanesa</h3>
+                    <p>Especiarias e utensílios para preparar pratos libaneses em casa.</p>
+                    <span class="price">R$ 120,00</span>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+                <div class="shop-item">
+                    <h3>Livro de Receitas Tradicionais</h3>
+                    <p>Receitas autênticas coletadas diretamente no Líbano.</p>
+                    <span class="price">R$ 95,00</span>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+                <div class="shop-item">
+                    <h3>Kit de Especiarias</h3>
+                    <p>Seleção de temperos típicos da culinária libanesa.</p>
+                    <span class="price">R$ 85,00</span>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas" class="reservation-section">
+            <h2 class="section-title">Reservas</h2>
+            <form id="reservation-form">
+                <div class="form-section">
+                    <h3>Dados Pessoais</h3>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required>
+                        <small>Formato: DDXXXXXXXXX</small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Data e Horário</h3>
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" min="2023-01-01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Horário</label>
+                        <input type="time" id="hora" name="hora" min="18:00" max="23:00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pessoas">Número de Pessoas</label>
+                        <input type="number" id="pessoas" name="pessoas" min="1" max="12" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Seleção de Mesa</h3>
+                    <div class="form-group">
+                        <label for="area">Área do Restaurante</label>
+                        <select id="area" name="area" required>
+                            <option value="">Selecione...</option>
+                            <option value="jardim">Jardim Mediterrâneo</option>
+                            <option value="varanda">Varanda com Vista para a Cidade</option>
+                            <option value="privativo">Área Privativa</option>
+                            <option value="comunitaria">Mesa Comunitária Libanesa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferência de Mesa</label>
+                        <div class="radio-group">
+                            <input type="radio" id="mesa-centro" name="mesa" value="centro" checked>
+                            <label for="mesa-centro">Centro</label>
+                            <input type="radio" id="mesa-canto" name="mesa" value="canto">
+                            <label for="mesa-canto">Canto</label>
+                            <input type="radio" id="mesa-janela" name="mesa" value="janela">
+                            <label for="mesa-janela">Perto da Janela</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Preferências Gastronômicas</h3>
+                    <div class="form-group">
+                        <label for="restricoes">Restrições Alimentares</label>
+                        <select id="restricoes" name="restricoes" multiple>
+                            <option value="vegetariano">Vegetariano</option>
+                            <option value="vegano">Vegano</option>
+                            <option value="sem-gluten">Sem Glúten</option>
+                            <option value="sem-lactose">Sem Lactose</option>
+                            <option value="alergia">Alergias (especifique abaixo)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="alergias">Alergias ou Observações</label>
+                        <textarea id="alergias" name="alergias" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="experiencia">Nível de Experiência com Comida Libanesa</label>
+                        <input type="range" id="experiencia" name="experiencia" min="1" max="5" value="3">
+                        <div class="range-labels">
+                            <span>Iniciante</span>
+                            <span>Aventureiro</span>
+                            <span>Experiente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Ocasião Especial</h3>
+                    <div class="form-group">
+                        <label for="ocasiao">Tipo de Ocasião</label>
+                        <select id="ocasiao" name="ocasiao">
+                            <option value="nenhuma">Nenhuma</option>
+                            <option value="aniversario">Aniversário</option>
+                            <option value="romantico">Encontro Romântico</option>
+                            <option value="negocios">Jantar de Negócios</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="detalhes-ocasiao" style="display: none;">
+                        <label for="detalhes">Detalhes da Ocasião</label>
+                        <textarea id="detalhes" name="detalhes" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="decoracao" name="decoracao">
+                        <label for="decoracao">Desejo decoração especial (custo adicional)</label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="submit-btn">Confirmar Reserva</button>
+                </div>
+            </form>
+            <div id="reservation-success" style="display: none;">
+                <h3>Reserva Confirmada!</h3>
+                <p>Obrigado por reservar conosco. Enviamos os detalhes para seu email.</p>
+                <button id="new-reservation-btn">Fazer Nova Reserva</button>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Beirute, 150 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> contato@saboresdolibano.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Domingo: 18h - 23h</p>
+                    <p>Segunda: Fechado</p>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.12345678901234567!3d51.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA3JzI0LjQiTiAwwrAwNyczNi4wIlc!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sabores do Líbano</h3>
+                <p>Experimente a autêntica culinária libanesa no Brasil.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sabores do Líbano. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const menuCategories = document.querySelectorAll('.menu-category');
+
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove "active" de todos os botões
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            // Adiciona "active" no botão clicado
+            button.classList.add('active');
+
+            // Oculta todas as categorias
+            menuCategories.forEach(category => category.classList.remove('active'));
+
+            // Mostra a categoria correspondente
+            const categoryId = button.getAttribute('data-category');
+            document.getElementById(categoryId).classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
